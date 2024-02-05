@@ -37,3 +37,19 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin ur_url
 git push -u origin main
+
+~git commit bash script
+#!/bin/bash
+read -p "Commit description: " desc
+git add . && \
+git add -u && \
+git commit -m "$desc" && \
+git push origin master
+
+or 
+
+#!/bin/bash  
+git pull
+git add .
+git commit -m "$*"
+git push
