@@ -29,3 +29,11 @@
 	-Git Cheatsheet
 	-Git Reference sites
 
+~create a new repository on the command line
+echo "# veendeta" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin ur_url
+git push -u origin main
